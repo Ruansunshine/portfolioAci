@@ -15,6 +15,12 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+.logo img {
+    max-width: 100%;  /* A imagem se adapta ao tamanho do contêiner */
+    height: auto;     /* Mantém a proporção original da imagem */
+    width: 100px;     /* Defina o tamanho desejado */
+    border-radius: 150vh;
+}
 
 .flex {
     display: flex;
@@ -177,6 +183,8 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+    width: 600px;     /* Defina o tamanho desejado */
+    height: 600px;
 }
 
 
