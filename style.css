@@ -105,7 +105,7 @@ header nav.menu-desktop ul li {
     z-index: 99999;
     width: 0%;
     overflow: hidden;
-    transition: .5s;
+    transition: width 0.5s ease;
 }
 
 .menu-mobile.abrir-menu{
@@ -418,25 +418,75 @@ footer .line-footer p a {
 
     /* TOPO DO SITE */
 
-    section.topo-do-site .flex {
-        gap: 40px;
-    }
+   
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 40px 4%;
+    }
+
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
     }
 
     .topo-do-site h1 {
-        font-size: 30px;
-    }
-
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site h1 span {
+    color: #00FF08;
+}
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
     .topo-do-site .img-topo-site img {
-        width: 100%;
+        position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 600px;     /* Defina o tamanho desejado */
+    height: 600px;
     }
 
     /* ESPECIALIDADES */
     section.especiliadades {
         padding: 40px 8%;
+    }
+    @keyframes flutuar {
+        0% {
+            top: 0;
+        }
+    
+        100% {
+            top: 30px;
+        }
+    }
+    
+    /* MEDIA QUERY PARA TELAS MENORES */
+    @media screen and (max-width: 1020px) {
+        section.topo-do-site .flex {
+            flex-direction: column-reverse; /* Imagem abaixo do texto */
+            gap: 30px; /* Diminui o espaço entre os itens */
+        }
+    
+        section.topo-do-site .img-topo-site img {
+            width: 100%; /* A imagem ocupa toda a largura da tela */
+            max-width: 500px; /* Limita a largura da imagem para não ficar gigante */
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+    
+        section.topo-do-site h1 {
+            font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
+        }
+    
+        section.topo-do-site .txt-topo-site h1 {
+            font-size: 28px; /* Ajusta o título */
+        }
+    
+        section.topo-do-site .txt-topo-site p {
+            font-size: 18px; /* Ajusta o tamanho do parágrafo */
+        }
     }
 
     /* SOBRE */
