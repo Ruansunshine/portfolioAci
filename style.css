@@ -15,6 +15,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .logo img {
     max-width: 100%;  /* A imagem se adapta ao tamanho do contêiner */
     height: auto;     /* Mantém a proporção original da imagem */
@@ -87,16 +88,16 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO MENU MOBILE */
 
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
-.btn-abrir-menu i{
+.btn-abrir-menu i {
     color: #00FF08;
     font-size: 40px;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: #000;
     height: 100vh;
     position: fixed;
@@ -108,42 +109,41 @@ header nav.menu-desktop ul li {
     transition: width 0.5s ease;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu ~ .overlay-menu {
     display: block;
 }
 
-
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar i{
+.menu-mobile .btn-fechar i {
     color: #00FF08;
     font-size: 30px;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
-}   
+}
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #00FF08;
     color: #000;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000df;
     width: 100%;
     height: 100%;
@@ -183,10 +183,9 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    width: 600px;     /* Defina o tamanho desejado */
+    width: 600px; /* Defina o tamanho desejado */
     height: 600px;
 }
-
 
 @keyframes flutuar {
     0% {
@@ -394,142 +393,69 @@ footer .line-footer p a {
     color: #fff;
 }
 
-@media screen and (max-width: 1020px) {
-
+@media screen and (max-width: 400px) {
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
     }
 
-    .topo-do-site .flex{
+    .topo-do-site .flex {
         flex-direction: column-reverse;
     }
 
     h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
-    }
-
-    /* CABEÇALHO */
-    .menu-desktop,
-    .btn-contato {
-        display: none;
-    }
-
-    /* TOPO DO SITE */
-
-   
-
-    section.topo-do-site {
-        padding: 40px 4%;
+        font-size: 28px;
     }
 
     section.topo-do-site .flex {
-        align-items: center;
-        justify-content: center;
-        gap: 90px;
+        gap: 50px;
     }
 
-    .topo-do-site h1 {
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
-}
-.topo-do-site .txt-topo-site h1 span {
-    color: #00FF08;
-}
-.topo-do-site .txt-topo-site p {
-    color: #fff;
-    margin: 40px 0;
-}
-    .topo-do-site .img-topo-site img {
-        position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    width: 600px;     /* Defina o tamanho desejado */
-    height: 600px;
-    }
-
-    /* ESPECIALIDADES */
-    section.especiliadades {
-        padding: 40px 8%;
-    }
-    @keyframes flutuar {
-        0% {
-            top: 0;
-        }
-    
-        100% {
-            top: 30px;
-        }
-    }
-    
-    /* MEDIA QUERY PARA TELAS MENORES */
-    @media screen and (max-width: 1020px) {
-        section.topo-do-site .flex {
-            flex-direction: column-reverse; /* Imagem abaixo do texto */
-            gap: 30px; /* Diminui o espaço entre os itens */
-        }
-    
-        section.topo-do-site .img-topo-site img {
-            width: 100%; /* A imagem ocupa toda a largura da tela */
-            max-width: 500px; /* Limita a largura da imagem para não ficar gigante */
-            margin: 0 auto; /* Centraliza a imagem */
-        }
-    
-        section.topo-do-site h1 {
-            font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
-        }
-    
-        section.topo-do-site .txt-topo-site h1 {
-            font-size: 28px; /* Ajusta o título */
-        }
-    
-        section.topo-do-site .txt-topo-site p {
-            font-size: 18px; /* Ajusta o tamanho do parágrafo */
-        }
-    }
-
-    /* SOBRE */
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
-        text-align: center;
-    }
-    
-    .btn-social{
-        text-align: center;
-    }
-
-    .img-sobre img{
-        width: 100%;
-    }
-
-    /* PORTFÓLIO */
-    section.portfolio {
-        padding: 80px 8%;
-    }
-
-    .img-port {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-    
     section.portfolio .flex {
-       gap: 60px;
-    }
-
-    /* RODAPÉ */
-    footer .flex {
         flex-direction: column;
         gap: 30px;
     }
 
-    footer .line-footer {
-        text-align: center;
+    section.sobre .flex {
+        gap: 40px;
+    }
+
+    .img-port {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer .line-footer p {
+        font-size: 12px;
+    }
+
+    .menu-mobile {
+        padding-top: 20px;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site .txt-topo-site h1 {
+        font-size: 28px;
+    }
+
+    section.sobre .txt-sobre h2 {
+        font-size: 28px;
     }
 }
